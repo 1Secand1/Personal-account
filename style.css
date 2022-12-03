@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("http://hb.bizmrg.com/fonts/montserrat/400.woff2") format("woff2"),
+    url("http://hb.bizmrg.com/fonts/montserrat/400.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+button {
+  padding: 0;
+  border: none;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+p {
+  font-family: "Montserrat";
+  text-align: center;
+  color: #212332;
+}
+.main {
+  display: grid;
+  grid-template-columns: 50%;
+  justify-content: center;
+  padding: 0px 20px 20px 20px;
+ 
+}
+.header {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+.userpic {
+  max-width: 15px;
+  max-height: 18px;
+  background-image: url(img/user.png);
+  column-gap: 10px;
+}
+.p {
+}
+.img {
+  margin: 0 auto;
+  padding: 50px 0px 30px 0px;
+}
+.text {
+  font-size: 16px;
+  line-height: 100%;
+}
+.aside-text {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 25px;
+}
+.rating {
+}
+.setting {
+    height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.setting__select-curriculum {
+    
+  padding: 2px 3px 2px 6px;
+  display: flex;
+  border: solid #212332 1.5px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.setting__select {
+  border: none;
+  font-size: 16px;
+}
+.selecti__item {
+  border: none;
+}
+.button-box__select-semester {
+    border: solid #212332 1.5px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 5px 2px 5px;
+}
+
+.button-box__select-semester--left-radius {
+    border-radius: 10px 0px 0px 10px;
+}
+.button-box__select-semester--right-radius {
+    border-radius: 0px 10px 10px 0px;
+}
+.rating__button-box {
+    display: flex;
+}
+
+.button-box__select-semester:focus {
+    background: #2a2d3e;
+    color: white;
+}
+.rating__table {
+  display: grid;
+  grid-template-columns: 30% 20% 30% 20%;
+  text-align: center;
+}
+
+
+.table {
+  width: 100%;
+  border: #21233249;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+body::-webkit-scrollbar {
+  height: 100px;
+  background: #b2baca;
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #2f3136;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .table__item--nan {
+    display: none;
+  }
+  .rating__table {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+  }
+  .main {
+    grid-template-columns: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    grid-template-columns: 100%;
+    padding: 5px;
+  }
+}
